@@ -1,8 +1,7 @@
 # FoodWebApp
-Prototype of Web App for Food Orders
-
-Teammates:
-Chun Ting Ho
-Yi Zhang
-Siyi Hu
-Ailun Pei
+Prototype of Web App for Food Orders<br/>
+Teammates:<br/>
+Chun Ting Ho<br/>
+Yi Zhang<br/>
+Siyi Hu<br/>
+Ailun Pei<br/>
