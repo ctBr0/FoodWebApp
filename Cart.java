@@ -12,4 +12,15 @@ public class Cart extends Menu{
         return totalCost;
     }
 
+    public int TotalPrepTime()
+    {
+        int totalPrepTime = 0;
+        FoodItem current = this.firstItem;
+        while (current != null)
+        {
+            totalPrepTime += current.getPrepTime();
+            current = current.nextItem;
+        }
+        return totalPrepTime;
+    }
 }
