@@ -78,6 +78,32 @@ public class Menu {
         this.firstItem = null;
     }
 
+    public FoodItem SearchByName(String name)
+    {
+        if (this.NumberOfItems() == 0)
+        {
+            System.out.println("The list is empty!");
+            return null;
+        }
+        else
+        {
+            FoodItem current = this.firstItem;
+            while (current.nextItem != null && current.getName() != name)
+            {
+                current = current.nextItem;
+            }
+            if (current.getName() == name)
+            {
+                return current;
+            }
+            else
+            {
+                System.out.println("Item does not exist!");
+                return null;
+            }
+        }
+    }
+
     public void PrintList()
     {
         if (this.NumberOfItems() == 0)
