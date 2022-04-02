@@ -5,18 +5,18 @@ public class FoodItem
 
     private String name;
     private double price;
-    private Duration prepTime;
+    private int prepTimeInMins;
     private String category;
     private String[] ingredients;
     FoodItem nextItem;
     int itemNumber;
 
-    public FoodItem(String name, double price, Duration prepTime, String category, String[] ingredients)
+    public FoodItem(String name, double price, int prepTimeInMins, String category, String[] ingredients)
     {
 
         this.name = name;
         this.price = price;
-        this.prepTime = prepTime;
+        this.prepTimeInMins = prepTimeInMins;
         this.category = category;
         this.ingredients = ingredients;
         this.nextItem = null;
@@ -34,9 +34,9 @@ public class FoodItem
         return price;
     }
 
-    public Duration getPrepTime()
+    public int getPrepTime()
     {
-        return prepTime;
+        return prepTimeInMins;
     }
 
     public String getCategory()
@@ -59,9 +59,9 @@ public class FoodItem
         this.price = newPrice;
     }
 
-    public void setPrepTime(Duration newPrepTime)
+    public void setPrepTime(int newPrepTimeInMins)
     {
-        this.prepTime = newPrepTime;
+        this.prepTimeInMins = newPrepTimeInMins;
     }
 
     public void setCategory(String newCategory)

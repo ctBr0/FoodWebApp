@@ -4,10 +4,10 @@ public class Cart {
     
     FoodItem firstItem;
 
-    public void AddItem(String name, double price, Duration prepTime, String category, String[] ingredients)
+    public void AddItem(String name, double price, int prepTimeInMins, String category, String[] ingredients)
     {
 
-        FoodItem newItem = new FoodItem(name, price, prepTime, category, ingredients);
+        FoodItem newItem = new FoodItem(name, price, prepTimeInMins, category, ingredients);
 
         if (this.firstItem == null)
         {
