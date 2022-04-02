@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <center>
+      <AnchorPane prefHeight="619.0" prefWidth="1211.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" layoutX="24.0" layoutY="92.0" prefHeight="494.0" prefWidth="953.0">
+              <columns>
+                <TableColumn fx:id="foodName" prefWidth="99.0" text="Food Name" />
+                <TableColumn fx:id="picture" prefWidth="200.0" text="Picture" />
+                  <TableColumn fx:id="description" prefWidth="168.33331298828125" text="Description" />
+                  <TableColumn fx:id="price" prefWidth="163.0" text="Price" />
+                  <TableColumn fx:id="numberoffood" prefWidth="122.0" text="Add to Chart" />
+              </columns>
+            </TableView>
+            <TextField fx:id="searchFood" layoutX="24.0" layoutY="54.0" promptText="Search" />
+            <ToolBar>
+              <items>
+                  <Button fx:id="profile" mnemonicParsing="false" onAction="#ChangeToProfileScene" text="Profiile" />
+                <Button fx:id="shoppingCart" mnemonicParsing="false" onAction="#ChangeToShoppingCartScene" text="Shopping cart" />
+                  <Button fx:id="orderInformation" mnemonicParsing="false" onAction="#ChangeToOIScene" text="Order Information" />
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" text="swicth to log out" />
+              </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <TilePane prefHeight="43.0" prefWidth="1000.0" style="-fx-background-color: #6cb1c0;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#641dbc" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <TilePane.margin>
+                  <Insets left="450.0" right="400.0" top="10.0" />
+               </TilePane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </TilePane>
+   </top>
+</BorderPane>
