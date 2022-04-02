@@ -1,6 +1,8 @@
 package application;
 public class Cart extends Menu{
     
+    public int cartID;
+
     public double TotalCost()
     {
         double totalCost = 0;
