@@ -35,7 +35,7 @@ public class HomePageController {
     @FXML
     private TableColumn<FoodItem, Integer> numberoffood;
     ObservableList<FoodItem> list = FXCollections.observableArrayList(
-    		new FoodItem("SUSUSU", "kskjjas", "delicious", 20, 3),
+    		new FoodItem("Chicken parm", 14.5, 30, "Main Course", {"Chicken", "Cheese"}),
     		new FoodItem("SUSUSU", "kskjjas", "delicious", 20, 3),
     		new FoodItem("SUSUSU", "kskjjas", "delicious", 20, 3),
     		new FoodItem("SUSUSU", "kskjjas", "delicious", 20, 3)
