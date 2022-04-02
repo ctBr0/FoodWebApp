@@ -3,12 +3,13 @@ import java.time.Duration;
 public class FoodItem
 {
 
-    String name;
-    double price;
-    Duration prepTime;
-    String category;
-    String[] ingredients;
+    private String name;
+    private double price;
+    private Duration prepTime;
+    private String category;
+    private String[] ingredients;
     FoodItem nextItem;
+    int itemNumber;
 
     public FoodItem(String name, double price, Duration prepTime, String category, String[] ingredients)
     {
@@ -19,6 +20,7 @@ public class FoodItem
         this.category = category;
         this.ingredients = ingredients;
         this.nextItem = null;
+        this.itemNumber = 0;
 
     }
 
