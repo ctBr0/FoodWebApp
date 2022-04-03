@@ -44,7 +44,7 @@
             <TextField fx:id="username" layoutX="160.0" layoutY="283.0" promptText="Username" />
             <PasswordField fx:id="password" layoutX="160.0" layoutY="348.0" promptText="Password" />
             <Button fx:id="button" layoutX="188.0" layoutY="413.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #ffc900;" text="Log In" />
-            <Label fx:id="wrongLogIn" layoutX="241.0" layoutY="244.0" prefHeight="17.0" prefWidth="37.0" textFill="RED" />
+            <Label fx:id="wrongLogIn" layoutX="160.0" layoutY="244.0" prefHeight="17.0" prefWidth="244.0" textFill="RED" />
             <Button fx:id="signupButton" layoutX="188.0" layoutY="462.0" mnemonicParsing="false" onAction="#userSignup" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #171717;" text="Sign Up" textFill="#ffc900" />
          </children>
       </AnchorPane>

@@ -9,8 +9,6 @@ public class Order {
 
     public void setWaitingTime()
     {
-        int waitingTime = 0;
-        waitingTime += cart.TotalPrepTime();
-        return waitingTime;
+        
     }
 } 

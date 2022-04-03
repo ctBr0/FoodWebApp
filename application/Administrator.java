@@ -18,7 +18,7 @@ public class Administrator {
 
     public void deleteFromMenu(String foodName) // deletes FoodItem with name
     {
-
+        
     }
 
 }

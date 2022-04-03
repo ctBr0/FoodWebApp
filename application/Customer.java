@@ -33,16 +33,6 @@ public class Customer{
 		this.coupons.add(newCoupon);
 	}
 
-	public void setPaymentInfo(PaymentInfo newPaymentInfo)
-	{
-		this.paymentInfo = newPaymentInfo;
-	}
-
-	public PaymentInfo getPaymentInfo()
-	{
-		return this.paymentInfo;
-	}
-
 	public void login(){
 		try(Scanner scanner = new Scanner(System.in)){
 		String username = scanner.nextLine();
