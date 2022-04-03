@@ -1,3 +1,4 @@
+package application;
 public class Coupon {
     
     private double discountPerc; //Discount percentage: 0.4 - 40% off

@@ -2,7 +2,7 @@ ID: 001
 Name: Alice 
 Username: alice
 Password: 123
-Email: jaksjksak@gmai.com
+Email: jaksjksak@gmail.com
 Phone: 2378762222
 ID: 002
 Name: ajska

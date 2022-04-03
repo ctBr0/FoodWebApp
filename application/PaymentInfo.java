@@ -1,14 +1,13 @@
+package application;
 /*
  * Copyright (C), FoodWebApp
  * FileName: PaymentInfo
  * Author:   Ailun Pei
  * Date:     
  * Description: Payment information
- * History: Version_1 
+ * History: Version_1
  */
-//package FoodWebApp;
 
-import java.util.Date;
 import java.util.Random;
 //https://www.konakart.com/javadoc/server/com/konakart/bl/modules/payment/PaymentInfo.html
 import java.lang.String;
@@ -26,7 +25,7 @@ public class PaymentInfo {
 	private int [] cardId;
 	private String holderName;
 	private String bankName;
-	private Date cardExpireDate;
+	private String cardExpireDate;
 	private int [] cvcCode;
 	
 	//order create
