@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RestaurantController">
+   <children>
+      <TableView fx:id="animals" layoutX="234.0" layoutY="74.0" onMouseClicked="#rowClicked" prefHeight="605.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="typeCol" prefWidth="150.0" text="Food Name" />
+            <TableColumn fx:id="typeCol1" minWidth="0.0" prefWidth="157.6666259765625" text="Picture" />
+            <TableColumn fx:id="nameCol" prefWidth="268.3333740234375" text="Description" />
+            <TableColumn fx:id="typeCol2" prefWidth="96.0" text="Price" />
+        </columns>
+      </TableView>
+      <VBox layoutX="38.0" layoutY="221.0" prefHeight="365.0" prefWidth="160.0" spacing="5.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+            <TextField fx:id="inputId1" disable="true" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food Name:" />
+            <TextField fx:id="inputFoodName" disable="true" />
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Picture:" />
+            <TextField fx:id="inputPicture" />
+            <Text layoutX="10.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+            <TextField fx:id="inputName" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" />
+            <TextField fx:id="inputPrice" disable="true" />
+            <Button mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="160.0" text="Submit" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
