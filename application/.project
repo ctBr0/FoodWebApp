@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
-	<name>GitHub_FoodWebApp</name>
-=======
-	<name>FoodWebApp</name>
->>>>>>> 95f7927528849ffe5dddd39b6d1c50ae0684034a
+	<name>application</name>
 	<comment></comment>
 	<projects>
 	</projects>

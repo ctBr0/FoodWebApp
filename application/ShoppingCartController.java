@@ -23,6 +23,9 @@ public class ShoppingCartController {
 
     @FXML
     private Button logout;
+    
+    @FXML
+    private Label totalPrice;
 
     @FXML
     void ChangeToHomePageScene(ActionEvent event) throws IOException {
@@ -41,12 +44,11 @@ public class ShoppingCartController {
     	Main m = new Main();
     	m.changeScene("profile.fxml");
     }
-
-    @FXML
-    void calculateTotalPrice(MouseEvent event) {
-    	//need to calculate the total price 
-    	
-    }
+    //need to calculate the total price 
+    //get items from the cart
+    //the totalprice textfield is  private Label totalPrice;
+    //write the function of total price
+    //use wrongLogIn.setText("Wrong username or password!") to set the total price
     
     @FXML
     void clickPlaceOrder(ActionEvent event) throws IOException {
