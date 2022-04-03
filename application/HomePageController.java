@@ -43,7 +43,7 @@ public class HomePageController implements Initializable{
 Button b1=new Button("Order");
 private void pizzaorder(ActionEvent event) {
 	int num=0;
-	b1.setText("success"+num);
+	b1.setText("success");
 	num++;
 }
 Button b2=new Button("Order");
