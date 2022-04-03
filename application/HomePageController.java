@@ -9,6 +9,7 @@ import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -23,7 +24,7 @@ public class HomePageController implements Initializable{
     private TableView<FoodItem> table;
     
 	  @FXML
-    private TableColumn<FoodItem, String> foodName;
+    private TableColumn<FoodItem, String> name;
 
     @FXML
     private TableColumn<FoodItem, String> picture;
@@ -41,11 +42,12 @@ public class HomePageController implements Initializable{
     new FoodItem("buger", "*", "meat,bread,cheese,veges", 10, 0),
 	new FoodItem("xiaolongbao", "*", "dough,meat", 10, 0),
 	new FoodItem("noodles", "*", "dough", 11, 0));
+	
    @Override
     public void initialize(URL url, ResourceBundle rb) {
 
     	
-    	foodName.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("foodName"));
+    	name.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("name"));
     	picture.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("picture"));
     	description.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("description"));
     	price.setCellValueFactory(new PropertyValueFactory<FoodItem,Integer>("price"));
