@@ -20,7 +20,7 @@ public class HomePageController {
     @FXML
     private TableView<FoodItem> table;
     
-	@FXML
+	  @FXML
     private TableColumn<FoodItem, String> foodName;
 
     @FXML

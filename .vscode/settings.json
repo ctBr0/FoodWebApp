@@ -1,0 +1,14 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/allenp/Documents/GitHub/FoodWebApp/**/*.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx-swt.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx.base.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx.controls.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx.fxml.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx.graphics.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx.media.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx.swing.jar",
+        "/Users/allenp/Documents/Java/javafx-sdk-18/lib/javafx.web.jar"
+    ]
+}
