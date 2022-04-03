@@ -78,6 +78,7 @@ public class LogInController {
 //		}
 		
         
+        
         boolean loginValid = check.checkUsernameAndPassword();
         //boolean passwordMatch;
         if (loginValid){
@@ -91,4 +92,3 @@ public class LogInController {
     }
 
 
-}
