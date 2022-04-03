@@ -25,7 +25,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="totalPrice" layoutX="841.0" layoutY="539.0" onDragDetected="#calculateTotalPrice" prefHeight="20.0" prefWidth="23.0">
+            <Label fx:id="totalPrice" layoutX="841.0" layoutY="539.0" prefHeight="20.0" prefWidth="23.0">
                <font>
                   <Font size="14.0" />
                </font>
