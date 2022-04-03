@@ -38,31 +38,53 @@ public class HomePageController implements Initializable{
     private TableColumn<FoodItem, Integer> price;
 
     @FXML
-    private TableColumn<FoodItem, Integer> numberoffood;
-    
+    private TableColumn<FoodItem, Button> numberoffood;
+@FXML    
+Button b1=new Button("Order");
+private void pizzaorder(ActionEvent event) {
+	int num=0;
+	b1.setText("success"+num);
+	num++;
+}
+Button b2=new Button("Order");
+private void burgerorder(ActionEvent event) {
+	b2.setText("success");
+}
+Button b3=new Button("Order");
+private void xlborder(ActionEvent event) {
+	b3.setText("success");
+}
+Button b4=new Button("Order");
+private void noodleorder(ActionEvent event) {
+	b4.setText("success");
+}
+
     private final ObservableList<FoodItem> list = FXCollections.observableArrayList();
 	
    @Override
     public void initialize(URL url, ResourceBundle rb) {
 
-    	
+    	b1.setOnAction(this::pizzaorder);
+    	b2.setOnAction(this::burgerorder);
+    	b3.setOnAction(this::xlborder);
+    	b4.setOnAction(this::noodleorder);
     	name.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("name"));
     	picture.setPrefWidth(80);
     	picture.setCellValueFactory(new PropertyValueFactory<>("picture"));
     	
     	description.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("description"));
     	price.setCellValueFactory(new PropertyValueFactory<FoodItem,Integer>("price"));
-    	numberoffood.setCellValueFactory(new PropertyValueFactory<FoodItem,Integer>("numberoffood")); 
+    	numberoffood.setCellValueFactory(new PropertyValueFactory<FoodItem,Button>("numberoffood")); 
     	
     	ImageView pizza = new ImageView(new Image(this.getClass().getResourceAsStream("pizza.png")));
-    	FoodItem f1 =new FoodItem("pizza",pizza, "cheese,meat,veges", 9, 0);
+    	FoodItem f1 =new FoodItem("pizza",pizza, "cheese,meat,veges", 9, b1);
     	list.add(f1);
     	ImageView burger = new ImageView(new Image(this.getClass().getResourceAsStream("burger.png")));
    	    ImageView xiaolongbao = new ImageView(new Image(this.getClass().getResourceAsStream("xiaolongbao.png")));
    	    ImageView noodle = new ImageView(new Image(this.getClass().getResourceAsStream("noodle.png")));
-   	    FoodItem f2 =new FoodItem("buger",burger, "meat,bread,cheese,veges", 10, 0);
-   	    FoodItem f3 =new FoodItem("xiaolongbao", xiaolongbao, "dough,meat", 10, 0);
-   	    FoodItem f4 =new FoodItem("noodles", noodle, "dough", 11, 0);
+   	    FoodItem f2 =new FoodItem("buger",burger, "meat,bread,cheese,veges", 10, b2);
+   	    FoodItem f3 =new FoodItem("xiaolongbao", xiaolongbao, "dough,meat", 10, b3);
+   	    FoodItem f4 =new FoodItem("noodles", noodle, "dough", 11, b4);
    	    list.add(f2);
    	    list.add(f3);
    	    list.add(f4);
