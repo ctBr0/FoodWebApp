@@ -11,10 +11,10 @@ public class FoodItem {
 	    String name,description;
 	    ImageView picture;
 	    double price;
-	    int numberoffood;
+	    Button numberoffood;
 	    FoodItem nextItem;
 	    int itemNumber;
-		public FoodItem(String name, ImageView picture, String description, double price, int numberoffood) {
+		public FoodItem(String name, ImageView picture, String description, double price, Button numberoffood) {
 			super();
 			this.name = name;
 			this.picture = picture;
@@ -48,76 +48,10 @@ public class FoodItem {
 		public void setPrice(double price) {
 			this.price = price;
 		}
-		public int getNumberoffood() {
+		public Button getNumberoffood() {
 			return numberoffood;
 		}
-		public void setNumberoffood(int numberoffood) {
+		public void setNumberoffood(Button numberoffood) {
 			this.numberoffood = numberoffood;
 		}	    
 }
-	    //Duration prepTime;
-	    //String category;
-	    //String[] ingredients;
-	    //FoodItem nextItem;
-
-//	    public FoodItem(String name, double price, Duration prepTime, String category, String[] ingredients){
-//
-//	        this.name = name;
-//	        this.price = price;
-//	        this.prepTime = prepTime;
-//	        this.category = category;
-//	        this.ingredients = ingredients;
-//	        this.nextItem = null;
-//	    }
-//
-//	    public String getName()
-//	    {
-//	        return name;
-//	    }
-//
-//	    public double getPrice()
-//	    {
-//	        return price;
-//	    }
-//
-//	    public Duration getPrepTime()
-//	    {
-//	        return prepTime;
-//	    }
-//
-//	    public String getCategory()
-//	    {
-//	        return category;
-//	    }
-//
-//	    public String[] getIngredients()
-//	    {
-//	        return ingredients;
-//	    }
-//
-//	    public void setName(String newName)
-//	    {
-//	        this.name = newName;
-//	    }
-//
-//	    public void setPrice(double newPrice)
-//	    {
-//	        this.price = newPrice;
-//	    }
-//
-//	    public void setPrepTime(Duration newPrepTime)
-//	    {
-//	        this.prepTime = newPrepTime;
-//	    }
-//
-//	    public void setCategory(String newCategory)
-//	    {
-//	        this.category = newCategory;
-//	    }
-//
-//	    public void setIngredients(String[] newIngredients)
-//	    {
-//	        this.ingredients = newIngredients;
-//	    }
-//	    
-//	}
