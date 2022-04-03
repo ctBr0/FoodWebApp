@@ -1,67 +1,60 @@
 package application;
 
-import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.control.Label;
 
 public class ShoppingCartController {
-
-    @FXML
-    private Button placeOrder;
 
     @FXML
     private Button homePage;
 
     @FXML
-    private Button profile;
+    private Button logout;
 
     @FXML
     private Button orderInformation;
 
     @FXML
-    private Button logout;
-    
+    private Button placeOrder;
+
+    @FXML
+    private Button profile;
+
     @FXML
     private Label totalPrice;
 
     @FXML
-    void ChangeToHomePageScene(ActionEvent event) throws IOException {
-    	Main m = new Main();
-    	m.changeScene("HomePage.fxml");
+    void ChangeToHomePageScene(ActionEvent event) {
+
     }
 
     @FXML
-    void ChangeToOIScene(ActionEvent event) throws IOException {
-    	Main m = new Main();
-    	m.changeScene("OrderInformation.fxml");
+    void ChangeToOIScene(ActionEvent event) {
+
     }
 
     @FXML
-    void ChangeToProfileScene(ActionEvent event) throws IOException {
-    	Main m = new Main();
-    	m.changeScene("profile.fxml");
+    void ChangeToProfileScene(ActionEvent event) {
+
     }
-    //need to calculate the total price 
-    //get items from the cart
-    //the totalprice textfield is  private Label totalPrice;
-    //write the function of total price
-    //use wrongLogIn.setText("Wrong username or password!") to set the total price
+
+    @FXML
+    void clickPlaceOrder(ActionEvent event) {
+
+    }
+
+    @FXML
+    void logout(ActionEvent event) {
+
+    }
+
     
-    @FXML
-    void clickPlaceOrder(ActionEvent event) throws IOException {
-    	//this part need to store the order information and calculate the total price
-    	Main m = new Main();
-    	m.changeScene("orderInformation.fxml");
-    	
-    }
 
-    @FXML
-    void logout(ActionEvent event) throws IOException {
-    	Main m = new Main();
-    	m.changeScene("profile.fxml");
-    }
+
+
+
+
 
 }
