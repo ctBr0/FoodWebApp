@@ -67,14 +67,14 @@ public class OrderInformationController {
     }
 
     @FXML
-    void calculateDate(MouseEvent event) {
+    void calculateDate( ) {
     	java.util.Date time = new java.util.Date();  
     	String now = time.toString();
     	date.setText(now);
     }
 
     @FXML
-    void calculateExceptedTime(MouseEvent event) {
+    void calculateExceptedTime( ) {
     	//need to get the order information how many food the customer ordered and the expected time is = # of food *5 minutes
     	int timeNeed = 0;
     	int order = 5;
@@ -84,7 +84,7 @@ public class OrderInformationController {
     }
 
     @FXML
-    void calculatePeopleAhead(MouseEvent event) {
+    void calculatePeopleAhead( ) {
     	//need to the the people ahead of this customer
     	int people = 9;
     	String b = Integer.toString(people);
@@ -92,9 +92,10 @@ public class OrderInformationController {
     }
 
     @FXML
-    void calculateTotalPrice(MouseEvent event) {
+    void calculateTotalPrice() {
     	//total Price = sum of (item * number) need to get the number of items 
-    	int price = 50;
+    	int price = 0;
+      	price = 9*HomePageController.pn+10*HomePageController.bn+10*HomePageController.xn+11*HomePageController.nn;
     	String c = Integer.toString(price);
     	totalPrice.setText(c);
     }

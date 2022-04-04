@@ -18,9 +18,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.Label;
-
 
 
 public class ShoppingCartController implements Initializable{
@@ -105,19 +105,23 @@ public class ShoppingCartController implements Initializable{
     	price.setCellValueFactory(new PropertyValueFactory<Food,Double>("price"));
     	numberoffood.setCellValueFactory(new PropertyValueFactory<Food,Integer>("numberoffood")); 
     	
-    	Food f1 =new Food("pizza", "cheese,meat,veges",0, 9);
+    	Food f1 =new Food("pizza", "cheese,meat,veges",HomePageController.pn, 9);
     	list.add(f1);
-    	ImageView burger = new ImageView(new Image(this.getClass().getResourceAsStream("burger.png")));
-   	    ImageView xiaolongbao = new ImageView(new Image(this.getClass().getResourceAsStream("xiaolongbao.png")));
-   	    ImageView noodle = new ImageView(new Image(this.getClass().getResourceAsStream("noodle.png")));
-   	    Food f2 =new Food("buger","meat,bread,cheese,veges", 0,10);
-   	    Food f3 =new Food("xiaolongbao","dough,meat",0, 10);
-   	    Food f4 =new Food("noodles", "dough",0, 11);
+
+   	    Food f2 =new Food("buger","meat,bread,cheese,veges", HomePageController.bn,10);
+   	    Food f3 =new Food("xiaolongbao","dough,meat",HomePageController.xn, 10);
+   	    Food f4 =new Food("noodles", "dough",HomePageController.nn, 11);
         list.add(f2);
    	    list.add(f3);
    	    list.add(f4);
         table.setItems(list);
-
+        
+        
+        	int price = 0;
+        	price = 9*HomePageController.pn+10*HomePageController.bn+10*HomePageController.xn+11*HomePageController.nn;
+        	String c = Integer.toString(price);
+        	totalPrice.setText(c);
+  
 
     }
 
