@@ -1,4 +1,4 @@
-#FoodWebApp
+## FoodWebApp
 Prototype of Web App for Food Orders
 
 ## Installation
@@ -60,11 +60,9 @@ SceneBuilder
 				* Only need one administrative account setup
 			* Can add/edit menu items.
 			* Give coupons to frequent customers.
-* How do we calculate the expected time for when an order will be completed?
+               * How do we calculate the expected time for when an order will be completed?
 	* This is a summation of the expected cook time of all the selected food items in all orders.
-		* For example, customer A ordered two food items. The first item takes 5 minutes to make. The second item takes 3 minutes to make. This means customer A’s order will take 8 minutes to prepare.
-This means, customer A’s order will be completed in ( 15 + 1 + 27 + 8 ) = 51 minutes.
-* How do we build the application using the class diagram?
+	* How do we build the application using the class diagram?
 	* Building UML Sequence diagrams might help if you are unsure how all the objects are supposed to communicate with each other.
 	* It can help everyone see what input needs to be read from the GUI, which function/objects should the input be passed to, and what does each function/object return.
 
