@@ -77,10 +77,10 @@ public class OrderInformationController {
     void calculateExceptedTime( ) {
     	//need to get the order information how many food the customer ordered and the expected time is = # of food *5 minutes
     	int timeNeed = 0;
-    	int order = 5;
+    	int order = HomePageController.pn+HomePageController.bn+HomePageController.xn+HomePageController.nn;
     	timeNeed = 5*order;
     	String a = Integer.toString(timeNeed);
-    	expectedTime.setText(a);
+    	expectedTime.setText(a+"min");
     }
 
     @FXML
