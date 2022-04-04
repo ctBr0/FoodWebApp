@@ -123,18 +123,4 @@ public class ShoppingCartController implements Initializable{
 
     }
 
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
 }
