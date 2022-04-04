@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderInformationController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="1044.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="orderFoodList" layoutX="26.0" layoutY="75.0" prefHeight="398.0" prefWidth="870.0" />
+            <Label layoutX="36.0" layoutY="473.0" prefHeight="45.0" prefWidth="93.0" text="  Total Price: ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPrice" layoutX="129.0" layoutY="486.0" onMouseClicked="#calculateTotalPrice" prefHeight="20.0" prefWidth="657.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="518.0" text="Date &amp; Time:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="154.0" layoutY="518.0" onMouseClicked="#calculateDate" prefHeight="20.0" prefWidth="525.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="553.0" text="People Ahead:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="peopleAhead" layoutX="159.0" layoutY="553.0" onMouseClicked="#calculatePeopleAhead" prefHeight="20.0" prefWidth="543.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="590.0" text="Excepted Time:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="expectedTime" layoutX="159.0" layoutY="590.0" onMouseClicked="#calculateExceptedTime" prefHeight="20.0" prefWidth="617.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ToolBar prefHeight="44.0" prefWidth="1000.0">
+              <items>
+                  <Button fx:id="homePage" mnemonicParsing="false" onAction="#ChangeToHomePageScene" text="Back to Home Page" />
+                <Button fx:id="profile" mnemonicParsing="false" onAction="#ChangeToProfileScene" text="Profile" />
+                  <Button fx:id="shoppingCart" mnemonicParsing="false" onAction="#ChangeToShoppingCartScene" text="Shopping Cart" />
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log out" />
+              </items>
+            </ToolBar>
+            <Label layoutX="46.0" layoutY="75.0" prefHeight="97.0" prefWidth="167.0" text="Payment Method:" />
+            <Button fx:id="visa" layoutX="36.0" layoutY="185.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="261.0" text="Visa">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="echeck" layoutX="323.0" layoutY="185.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="261.0" text="echeck">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="cash" layoutX="614.0" layoutY="185.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="261.0" text="Cash">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <TilePane prefHeight="43.0" prefWidth="1280.0" style="-fx-background-color: #6cb1c0;" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
