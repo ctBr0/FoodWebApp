@@ -11,14 +11,14 @@ public class Administrator {
         
     }
 
-    public void addToMenu(FoodItem item) // adds FoodItem to the menu
-    {
+    // public void addToMenu(FoodItem item) // adds FoodItem to the menu
+    // {
         
-    }
+    // }
 
-    public void deleteFromMenu(String foodName) // deletes FoodItem with name
-    {
+    // public void deleteFromMenu(String foodName) // deletes FoodItem with name
+    // {
         
-    }
+    // }
 
 }

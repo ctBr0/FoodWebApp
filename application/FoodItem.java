@@ -24,6 +24,18 @@ public class FoodItem {
 			this.nextItem = null;
 	        this.itemNumber = 0;
 		}
+
+		// @Override
+		public FoodItem(String name, String description, double price, Button numberoffood) {
+			super();
+			this.name = name;
+			// this.picture = picture;
+			this.description = description;
+			this.price = price;
+			this.numberoffood = numberoffood;
+			this.nextItem = null;
+	        this.itemNumber = 0;
+		}
 		public String getName() {
 			return name;
 		}

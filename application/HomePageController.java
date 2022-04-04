@@ -117,7 +117,7 @@ private void noodleorder(ActionEvent event) {
     	m.changeScene("profile.fxml");
     }
 
-    @FXML
+    @FXML:
     void ChangeToOIScene(ActionEvent event) throws IOException{
     	Main m = new Main();
     	m.changeScene("OrderInformation.fxml");
