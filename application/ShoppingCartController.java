@@ -71,14 +71,8 @@ public class ShoppingCartController implements Initializable{
     void ChangeToOIScene(ActionEvent event) throws IOException {
         Main m = new Main();
     	m.changeScene("OrderInformation.fxml");
-    void ChangeToHomePageScene(ActionEvent event) {
 
-    }
 
-    @FXML
-    void ChangeToOIScene(ActionEvent event) {
-
-    }
 
     @FXML
     void ChangeToProfileScene(ActionEvent event) {
@@ -89,17 +83,13 @@ public class ShoppingCartController implements Initializable{
     void clickPlaceOrder(ActionEvent event) throws IOException {
         Main m = new Main();
     	m.changeScene("OrderInformation.fxml");
-    void clickPlaceOrder(ActionEvent event) {
 
-    }
 
     @FXML
     void logout(ActionEvent event) throws IOException {
     	Main m = new Main();
     	m.changeScene("afterLogin.fxml");
-    void logout(ActionEvent event) {
 
-    }
     private final ObservableList<FoodItem> list = FXCollections.observableArrayList();
 
     @Override
