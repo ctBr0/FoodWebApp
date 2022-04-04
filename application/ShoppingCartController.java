@@ -19,6 +19,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.Label;
 
 
 
@@ -70,19 +71,25 @@ public class ShoppingCartController implements Initializable{
     void ChangeToOIScene(ActionEvent event) throws IOException {
         Main m = new Main();
     	m.changeScene("OrderInformation.fxml");
+    void ChangeToHomePageScene(ActionEvent event) {
 
     }
 
     @FXML
-    void ChangeToProfileScene(ActionEvent event) throws IOException {
-    	Main m = new Main();
-    	m.changeScene("profile.fxml");
+    void ChangeToOIScene(ActionEvent event) {
+
+    }
+
+    @FXML
+    void ChangeToProfileScene(ActionEvent event) {
+
     }
 
     @FXML
     void clickPlaceOrder(ActionEvent event) throws IOException {
         Main m = new Main();
     	m.changeScene("OrderInformation.fxml");
+    void clickPlaceOrder(ActionEvent event) {
 
     }
 
@@ -90,6 +97,8 @@ public class ShoppingCartController implements Initializable{
     void logout(ActionEvent event) throws IOException {
     	Main m = new Main();
     	m.changeScene("afterLogin.fxml");
+    void logout(ActionEvent event) {
+
     }
     private final ObservableList<FoodItem> list = FXCollections.observableArrayList();
 
@@ -125,6 +134,13 @@ public class ShoppingCartController implements Initializable{
     }
 
 
+
+
+
+
+
+
+    
 
 
 

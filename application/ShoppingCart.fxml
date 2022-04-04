@@ -27,6 +27,7 @@
       </TilePane>
    </top>
    <bottom>
+   <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="placeOrder" layoutX="768.0" layoutY="589.0" mnemonicParsing="false" onAction="#clickPlaceOrder" prefHeight="50.0" prefWidth="135.0" text="Place Order">
@@ -58,6 +59,10 @@
                 <TableColumn fx:id="descriptiondescription" prefWidth="190.0302734375" text="Description" />
                   <TableColumn fx:id="numberoffoodnumberoffood" prefWidth="285.96246337890625" text="quantity" />
                   <TableColumn fx:id="priceprice" prefWidth="141.03753662109375" text="Price" />
+                <TableColumn prefWidth="165.68580627441406" text="Food" />
+                <TableColumn prefWidth="190.0302734375" text="Description" />
+                  <TableColumn prefWidth="285.96246337890625" text="quantity" />
+                  <TableColumn prefWidth="141.03753662109375" text="Price" />
               </columns>
             </TableView>
          </children>
