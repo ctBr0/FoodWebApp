@@ -52,10 +52,10 @@
                   <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log out" />
               </items>
             </ToolBar>
-            <TableView layoutX="72.0" layoutY="78.0" prefHeight="465.0" prefWidth="833.0">
+            <TableView fx:id="table" layoutX="72.0" layoutY="78.0" prefHeight="465.0" prefWidth="833.0">
               <columns>
                 <TableColumn fx:id="name" prefWidth="165.68580627441406" text="Food" />
-                <TableColumn fx:id="descriptiondescription" prefWidth="190.0302734375" text="Description" />
+                <TableColumn fx:id="description" prefWidth="190.0302734375" text="Description" />
                   <TableColumn fx:id="numberoffood" prefWidth="285.96246337890625" text="quantity" />
                   <TableColumn fx:id="price" prefWidth="141.03753662109375" text="Price" />
               </columns>

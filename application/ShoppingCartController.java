@@ -47,19 +47,18 @@ public class ShoppingCartController implements Initializable{
 
     //table
     @FXML
-    private TableView<FoodItem> table;
+    private TableView<Food> table;
     
     @FXML
-    private TableColumn<FoodItem, String> name;
+    private TableColumn<Food, String> name;
 
     @FXML
-    private TableColumn<FoodItem, String> description;
+    private TableColumn<Food, String> description;
 
     @FXML
-    private TableColumn<FoodItem, Button> numberoffood;
-
+    private TableColumn<Food, Double> price;
     @FXML
-    private TableColumn<FoodItem, Integer> price;
+    private TableColumn<Food, Integer> numberoffood;
 
     @FXML
     void ChangeToHomePageScene(ActionEvent event) throws IOException{
@@ -70,7 +69,7 @@ public class ShoppingCartController implements Initializable{
     @FXML
     void ChangeToOIScene(ActionEvent event) throws IOException {
         Main m = new Main();
-    	m.changeScene("OrderInformation.fxml");
+    	m.changeScene("OrderInformation.fxml");}
 
 
 
@@ -82,15 +81,15 @@ public class ShoppingCartController implements Initializable{
     @FXML
     void clickPlaceOrder(ActionEvent event) throws IOException {
         Main m = new Main();
-    	m.changeScene("OrderInformation.fxml");
+    	m.changeScene("OrderInformation.fxml");}
 
 
     @FXML
     void logout(ActionEvent event) throws IOException {
     	Main m = new Main();
-    	m.changeScene("afterLogin.fxml");
+    	m.changeScene("afterLogin.fxml");}
 
-    private final ObservableList<FoodItem> list = FXCollections.observableArrayList();
+    private final ObservableList<Food> list = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -98,23 +97,22 @@ public class ShoppingCartController implements Initializable{
     	// b2.setOnAction(this::burgerorder);
     	// b3.setOnAction(this::xlborder);
     	// b4.setOnAction(this::noodleorder);
-    	name.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("name"));
+    	name.setCellValueFactory(new PropertyValueFactory<Food,String>("name"));
     	// picture.setPrefWidth(80);
     	// picture.setCellValueFactory(new PropertyValueFactory<>("picture"));
     	
-    	description.setCellValueFactory(new PropertyValueFactory<FoodItem,String>("description"));
-    	price.setCellValueFactory(new PropertyValueFactory<FoodItem,Integer>("price"));
-    	numberoffood.setCellValueFactory(new PropertyValueFactory<FoodItem,Button>("numberoffood")); 
+    	description.setCellValueFactory(new PropertyValueFactory<Food,String>("description"));
+    	price.setCellValueFactory(new PropertyValueFactory<Food,Double>("price"));
+    	numberoffood.setCellValueFactory(new PropertyValueFactory<Food,Integer>("numberoffood")); 
     	
-    	ImageView pizza = new ImageView(new Image(this.getClass().getResourceAsStream("pizza.png")));
-    	FoodItem f1 =new FoodItem("pizza",pizza, "cheese,meat,veges", 9);
+    	Food f1 =new Food("pizza", "cheese,meat,veges",0, 9);
     	list.add(f1);
     	ImageView burger = new ImageView(new Image(this.getClass().getResourceAsStream("burger.png")));
    	    ImageView xiaolongbao = new ImageView(new Image(this.getClass().getResourceAsStream("xiaolongbao.png")));
    	    ImageView noodle = new ImageView(new Image(this.getClass().getResourceAsStream("noodle.png")));
-   	    FoodItem f2 =new FoodItem("buger",burger, "meat,bread,cheese,veges", 10);
-   	    FoodItem f3 =new FoodItem("xiaolongbao", xiaolongbao, "dough,meat", 10);
-   	    FoodItem f4 =new FoodItem("noodles", noodle, "dough", 11);
+   	    Food f2 =new Food("buger","meat,bread,cheese,veges", 0,10);
+   	    Food f3 =new Food("xiaolongbao","dough,meat",0, 10);
+   	    Food f4 =new Food("noodles", "dough",0, 11);
         list.add(f2);
    	    list.add(f3);
    	    list.add(f4);
