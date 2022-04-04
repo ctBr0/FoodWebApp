@@ -16,13 +16,13 @@
    <center>
       <AnchorPane prefHeight="619.0" prefWidth="1211.0" BorderPane.alignment="CENTER">
          <children>
-            <TableView fx:id="table" fixedCellSize="1.0" layoutX="14.0" layoutY="92.0" prefHeight="494.0" prefWidth="953.0" AnchorPane.rightAnchor="33.0">
+            <TableView fx:id="table" layoutX="24.0" layoutY="92.0" prefHeight="494.0" prefWidth="953.0">
               <columns>
-                <TableColumn fx:id="name" prefWidth="200.0" text="Name" />
-                  <TableColumn fx:id="category" prefWidth="200.0" text="category" />
-                  <TableColumn fx:id="ingredients" prefWidth="250.0" text="ingredient" />
-                  <TableColumn fx:id="price" prefWidth="122.0" text="price" />
-                <TableColumn fx:id="prepTimeInMins" prefWidth="200.0" text="preTime" />
+                <TableColumn fx:id="name" prefWidth="99.0" text="Food Name" />
+                <TableColumn fx:id="picture" prefWidth="200.0" text="Picture" />
+                  <TableColumn fx:id="description" prefWidth="168.33331298828125" text="Description" />
+                  <TableColumn fx:id="price" prefWidth="163.0" text="Price" />
+                  <TableColumn fx:id="numberoffood" prefWidth="122.0" text="Add to Chart" />
               </columns>
             </TableView>
             <TextField fx:id="searchFood" layoutX="24.0" layoutY="54.0" promptText="Search" />
