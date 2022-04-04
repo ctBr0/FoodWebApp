@@ -8,22 +8,17 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
-import java.time.LocalDateTime;  
-import java.time.format.DateTimeFormatter;  
 
 public class OrderInformationController {
 
     @FXML
-    private ListView<?> orderFoodList;
-
-    @FXML
-    private Label totalPrice;
+    private Button cash;
 
     @FXML
     private Label date;
 
     @FXML
-    private Label peopleAhead;
+    private Button echeck;
 
     @FXML
     private Label expectedTime;
@@ -32,13 +27,26 @@ public class OrderInformationController {
     private Button homePage;
 
     @FXML
+    private Button logout;
+
+    @FXML
+    private ListView<?> orderFoodList;
+
+    @FXML
+    private Label peopleAhead;
+
+    @FXML
     private Button profile;
 
     @FXML
     private Button shoppingCart;
 
     @FXML
-    private Button logout;
+    private Label totalPrice;
+
+    @FXML
+    private Button visa;
+
 
     @FXML
     void ChangeToHomePageScene(ActionEvent event) throws IOException {

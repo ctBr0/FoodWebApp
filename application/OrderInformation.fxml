@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderInformationController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderInformationController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="1044.0" BorderPane.alignment="CENTER">
          <children>
@@ -62,6 +62,22 @@
                   <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log out" />
               </items>
             </ToolBar>
+            <Label layoutX="46.0" layoutY="75.0" prefHeight="97.0" prefWidth="167.0" text="Payment Method:" />
+            <Button fx:id="visa" layoutX="36.0" layoutY="185.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="261.0" text="Visa">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="echeck" layoutX="323.0" layoutY="185.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="261.0" text="echeck">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="cash" layoutX="614.0" layoutY="185.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="261.0" text="Cash">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </center>
