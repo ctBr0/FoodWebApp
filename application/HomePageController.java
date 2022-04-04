@@ -1,3 +1,62 @@
+package application;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableArray;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+
+public class HomePageController implements Initializable{
+	
+    @FXML
+    private TableView<FoodItem> table;
+    
+	  @FXML
+    private TableColumn<FoodItem, String> name;
+
+    @FXML
+    private TableColumn<FoodItem, String> picture;
+
+    @FXML
+    private TableColumn<FoodItem, String> description;
+
+    @FXML
+    private TableColumn<FoodItem, Integer> price;
+
+    @FXML
+    private TableColumn<FoodItem, Button> numberoffood;
+@FXML    
+Button b1=new Button("Order");
+private void pizzaorder(ActionEvent event) {
+	int num=0;
+	b1.setText("success");
+	num++;
+}
+Button b2=new Button("Order");
+private void burgerorder(ActionEvent event) {
+	b2.setText("success");
+}
+Button b3=new Button("Order");
+private void xlborder(ActionEvent event) {
+	b3.setText("success");
+}
+Button b4=new Button("Order");
+private void noodleorder(ActionEvent event) {
+	b4.setText("success");
 }
 
     private final ObservableList<FoodItem> list = FXCollections.observableArrayList();
